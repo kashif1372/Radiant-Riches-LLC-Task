@@ -1,0 +1,70 @@
+.signup {
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-left: 0px;
+    gap: 10px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding-left: 0px;
+    gap: 20px;
+  }
+  .signup-text {
+    color: rgba(92, 104, 116, 1);
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+
+  .input-group {
+    display: flex;
+    align-items: stretch;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .input-group > input {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 1);
+    width: 348px;
+    height: 47px;
+    border-radius: 12px 0 0 12px;
+    padding-left: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Inter";
+    border: none;
+    outline: none;
+  }
+
+  button {
+    background-color: rgba(27, 136, 244, 1);
+    width: 100px;
+    height: 52px;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Inter";
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(22, 115, 208, 1);
+  }
+}

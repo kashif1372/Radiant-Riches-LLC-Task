@@ -1,0 +1,87 @@
+.footer {
+  margin-top: 20px;
+  background-color: rgba(33, 39, 49, 1);
+
+  @media screen and (max-width: 500px) {
+    padding: 0 100px;
+  }
+  @media screen and (min-width: 500px) and (max-width: 992px) {
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding: 0 110px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    padding: 0 200px;
+  }
+  @media screen and (min-width: 1500px) {
+    padding: 0 284px;
+  }
+
+  .footer-div {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    @media screen and (max-width: 500px) {
+      grid-template-columns: auto;
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 992px) {
+      grid-template-columns: auto auto;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      grid-template-columns: auto auto auto;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1500px) {
+      grid-template-columns: auto auto auto auto;
+    }
+
+    @media screen and (min-width: 1500px) {
+      grid-template-columns: auto auto auto auto auto;
+    }
+    > div:last-child {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      padding-bottom: 10px;
+
+      &.footer-heading {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: "Inter";
+      }
+      &.footer-links {
+        color: rgba(182, 189, 196, 1);
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        font-family: "Inter";
+      }
+    }
+    .footer-select {
+      border: none;
+      outline: none;
+      background-color: rgba(33, 39, 49, 1);
+      color: rgba(209, 214, 218, 1);
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      font-family: "Inter";
+    }
+    @media (min-width: 768px) {
+      .all-card {
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+}

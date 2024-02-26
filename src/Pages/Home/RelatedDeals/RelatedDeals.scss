@@ -1,0 +1,145 @@
+.main {
+  margin: 60px 0;
+
+  .main-heading {
+    color: rgba(44, 56, 74, 1);
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 400;
+    font-family: "Inter";
+    margin-bottom: 30px;
+  }
+
+  .all-card {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+
+    .card {
+      background-color: rgba(255, 255, 255, 1);
+      padding: 20px;
+      border-radius: 12px;
+      .img-div {
+        display: flex;
+        justify-content: center;
+
+        .deal-card-img {
+          margin-bottom: 20px;
+        }
+      }
+
+      .offer-detail {
+        display: flex;
+
+        .offer {
+          color: rgba(7, 71, 134, 1);
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: 400;
+          font-family: "Inter";
+          background-color: rgba(242, 244, 247, 1);
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+
+        .limit {
+          color: rgba(7, 71, 134, 1);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          font-family: "Inter";
+          background-color: rgba(242, 244, 247, 1);
+          padding: 5px 10px;
+          display: block;
+          border-radius: 4px;
+          margin-left: 5px;
+        }
+      }
+
+      .card-title {
+        color: rgba(98, 110, 121, 1);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        font-family: "Inter";
+        text-align: center;
+        margin-top: -6px;
+      }
+
+      .card-desc {
+        color: rgba(98, 110, 121, 1);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: "Inter";
+        margin-top: -6px;
+      }
+
+      .price-div {
+        display: flex;
+        align-items: center;
+        margin: -20px 0;
+
+        .price {
+          color: rgba(92, 104, 116, 1);
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 400;
+          font-family: "Inter";
+        }
+
+        .actual-price {
+          color: rgba(159, 169, 179, 1);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          font-family: "Inter";
+          margin: 0 15px;
+        }
+
+        .off {
+          color: rgba(239, 76, 93, 1);
+          font-size: 13px;
+          line-height: 20px;
+          font-weight: 400;
+          font-family: "Inter";
+        }
+      }
+
+      .view-div {
+        margin-top: 15px;
+
+        .view-btn {
+          background-color: rgba(27, 136, 244, 1);
+          width: 100%;
+          height: 48px;
+          border: none;
+          outline: none;
+          border-radius: 12px;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          font-family: "Inter";
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+          &:hover {
+            cursor: pointer;
+            background-color: rgba(22, 115, 208, 1);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .all-card {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .all-card {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}

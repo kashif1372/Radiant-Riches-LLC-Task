@@ -1,0 +1,304 @@
+.banner {
+  margin-top: 20px;
+
+  .banner-row {
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 20% 50% 30%;
+    margin-top: 20px;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        .content-no {
+          @if $i == 4 {
+            top: 8%;
+            @media screen and (max-width: 768px) {
+              top: 5%;
+            }
+          } @else {
+            top: 13%;
+            @media screen and (max-width: 768px) {
+              top: 7%;
+            }
+          }
+        }
+        .view-div {
+          @if $i == 4 {
+            margin-top: 244px;
+            @media screen and (max-width: 500px) {
+              margin-top: -45px;
+              margin-left: 350px;
+            }
+          } @else {
+            margin-top: 95px;
+            @media screen and (max-width: 500px) {
+              margin-top: -45px;
+              margin-left: 350px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-btn {
+      position: absolute;
+      top: -6.5%;
+      left: -5px;
+      background-color: rgba(255, 119, 36, 1);
+      width: 136px;
+      height: 34px;
+      border-radius: 0px 8px 8px 0px;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 500px) {
+        top: -2.5%;
+      }
+      @media screen and (min-width: 500px) and (max-width: 768px) {
+        top: -3%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        top: -5%;
+      }
+      @media screen and (min-width: 992px) and (max-width: 1500px) {
+        top: -5.5%;
+      }
+      .content-text {
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: "Inter";
+        margin-left: 8px;
+      }
+    }
+
+    .content-no {
+      position: absolute;
+      left: -23px;
+      color: rgb(98, 110, 121);
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 400;
+      font-family: "Inter";
+      border: 1px solid rgba(225, 228, 230, 1);
+      border-radius: 9999px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .first-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .banner-title {
+        color: rgba(98, 110, 121, 1);
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        font-family: "Inter";
+      }
+    }
+
+    .banner-text {
+      color: rgba(75, 86, 101, 1);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Inter";
+      margin-bottom: 5px;
+
+      .banner-text-bold {
+        font-weight: 700;
+      }
+    }
+
+    .offer {
+      color: rgba(7, 71, 134, 1);
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      font-family: "Inter";
+      background-color: rgba(242, 244, 247, 1);
+      width: 61px;
+      height: 26px;
+      padding-left: 5px;
+      padding-top: 2px;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .main-highlights {
+      color: rgba(44, 56, 74, 1);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      font-family: "Inter";
+    }
+
+    .highlight-div {
+      background-color: rgba(255, 244, 237, 1);
+      border-radius: 12px;
+      padding-left: 12px;
+
+      .highlight-content {
+        display: flex;
+        align-items: center;
+
+        .highlist-count {
+          background-color: rgba(255, 255, 255, 1);
+          color: rgba(27, 136, 244, 1);
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+
+        .highlight-text {
+          color: rgba(75, 86, 101, 1);
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 400;
+          font-family: "Inter";
+          margin-left: 8px;
+        }
+      }
+
+      .highest-top {
+        padding-top: 8px;
+      }
+
+      .high {
+        margin-bottom: 8px;
+      }
+
+      .highest-bottom {
+        padding-bottom: 8px;
+      }
+    }
+
+    .receive-text {
+      color: rgba(75, 86, 101, 1);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Inter";
+      margin-left: 15px;
+    }
+
+    .love {
+      color: rgba(44, 56, 74, 1);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Inter";
+    }
+
+    .choose-div {
+      display: flex;
+      align-items: center;
+
+      .choose-text {
+        color: rgba(75, 86, 101, 1);
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: "Inter";
+        margin-left: 10px;
+      }
+    }
+
+    .select-relevant {
+      border: none;
+      outline: none;
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(27, 136, 244, 1);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Inter";
+      margin: 10px 0;
+    }
+
+    .third-row {
+      background-color: rgba(243, 249, 255, 1);
+      width: 135px;
+      height: 122px;
+      border-radius: 0px 0px 12px 12px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: right;
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 100px;
+        height: 122px;
+      }
+      .advertise-img {
+        align-self: flex-end;
+        padding-top: 3px;
+      }
+
+      .view-div {
+        .view-btn {
+          background-color: rgba(27, 136, 244, 1);
+          width: 232px;
+          height: 48px;
+          border: none;
+          outline: none;
+          border-radius: 12px;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          font-family: "Inter";
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+          &:hover {
+            cursor: pointer;
+            background-color: rgba(22, 115, 208, 1);
+          }
+          @media screen and (max-width: 450px) {
+            width: 150px;
+            height: 48px;
+          }
+          @media screen and (max-width: 768px) and (min-width: 450px) {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            width: 150px;
+            height: 48px;
+          }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+          @media screen and (min-width: 1200px) and (max-width: 1500px) {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-row {
+      grid-template-columns: 1fr;
+    }
+  }
+}
